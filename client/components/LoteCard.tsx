@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useLoteStore } from '../store/useLoteStore';
-import toast from 'react-hot-toast';
 import { useEffect } from 'react';
 import { TicketRestaurante } from './TicketRestaurante';
 import { AcreditacionCanon } from './AcreditacionCanon';
@@ -11,13 +10,11 @@ export const LoteCard = ({ lote }: { lote: any }) => {
     const { pagarExpensa, consumirCanon, deleteLote, deleteCanon, updatePropietarios } = useLoteStore();
 
     //Estados  para la edicion
-    const [isEditing, setIsEditing]= useState(false);
-    const [editPropietarios, setEditPropietarios] = useState(lote.propietarios);
+    const [ setEditPropietarios] = useState(lote.propietarios);
 
     //Actualiza el estado local si cambiamos de lote seleccionado 
     useEffect(() => {
         setEditPropietarios(lote.propietarios);
-        setIsEditing(false);
     }, [lote]);
 
 

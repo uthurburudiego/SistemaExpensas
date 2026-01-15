@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 export const DesgloseMeses = ({ canones, deleteCanon, loteId }: any) => {
     const mesesNombres = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];

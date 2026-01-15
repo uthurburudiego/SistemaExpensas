@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import toast from 'react-hot-toast';
-import { useAuthStore } from '../store/useAuthStore';
 
 export const HeaderLote = ({ lote, deleteLote, updatePropietarios, saldoTotal }: any) => {
     const [isEditing, setIsEditing] = useState(false);
@@ -38,7 +37,6 @@ export const HeaderLote = ({ lote, deleteLote, updatePropietarios, saldoTotal }:
         setEditPropietarios(newProps);
     };
 
-    const isAdmin = useAuthStore(state => state.isAdmin());
 
     return (
         <div className="flex justify-between items-start mb-8">
