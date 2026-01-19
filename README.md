@@ -43,7 +43,7 @@ Clonar el repositorio:
 
 Bash
 
-git clone https://github.com/tu-usuario/tu-repositorio.git
+git clone [Sistema Expensas](https://github.com/uthurburudiego/SistemaExpensas)
 Configurar el Backend:
 
 Navega a la carpeta server.
